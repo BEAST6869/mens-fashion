@@ -3,6 +3,15 @@ const nextConfig = {
   output: 'standalone',
   images: {
     domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
+  experimental: {
+    optimizeFonts: true,
   },
 }
 
